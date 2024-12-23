@@ -15,7 +15,7 @@ And add the following
     <configItem>
         <name>rdvp</name>
         <description>English (Real Programmer QWERTY)</description>
-        <vendor>MichaelPaulson</vendor>
+        <vendor>Vishless</vendor>
     </configItem>
 </variant>
 ```
