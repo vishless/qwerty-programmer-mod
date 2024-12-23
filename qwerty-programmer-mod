@@ -1,0 +1,72 @@
+// The Real programmer's QWERTY
+// Vishless
+partial alphanumeric_keys
+xkb_symbols "rpql" {
+
+    name[Group1]= "English (Real Programmers QWERTY)";
+
+    // TLDE key: grave, tilde, and related dead keys
+    key <TLDE> { [ dead_grave, dead_tilde, grave, asciitilde ] };
+
+    // AE01 to AE12: Number keys and their corresponding symbols (with Shift numbers)
+    key <AE01> { [ plus, 1 ] };
+    key <AE02> { [ bracketleft, 2 ] };
+    key <AE03> { [ braceleft, 3 ] };
+    key <AE04> { [ parenleft, 4 ] };
+    key <AE05> { [ ampersand, 5 ] };
+    key <AE06> { [ equal, 6, dead_circumflex, dead_circumflex ] };
+    key <AE07> { [ parenright, 7 ] };
+    key <AE08> { [ braceright, 8 ] };
+    key <AE09> { [ bracketright, 9, dead_grave ] };
+    key <AE10> { [ asterisk, 0 ] };
+    key <AE11> { [ exclam, percent ] };
+    key <AE12> { [ hash, dollar, multiply, division ] };
+
+    // AD01 to AD12: Alphabetic and accented characters
+    key <AD01> { [ q, Q, adiaeresis, Adiaeresis ] };
+    key <AD02> { [ w, W, aring, Aring ] };
+    key <AD03> { [ e, E, eacute, Eacute ] };
+    key <AD04> { [ r, R, registered, registered ] };
+    key <AD05> { [ t, T, thorn, THORN ] };
+    key <AD06> { [ y, Y, udiaeresis, Udiaeresis ] };
+    key <AD07> { [ u, U, uacute, Uacute ] };
+    key <AD08> { [ i, I, iacute, Iacute ] };
+    key <AD09> { [ o, O, oacute, Oacute ] };
+    key <AD10> { [ p, P, odiaeresis, Odiaeresis ] };
+    key <AD11> { [ minus, underscore, guillemotleft, leftdoublequotemark ] };
+    key <AD12> { [ at, circumflex, guillemotright, rightdoublequotemark ] };
+
+    // AC01 to AC11: More alphabetic and symbol keys
+    key <AC01> { [ a, A, aacute, Aacute ] };
+    key <AC02> { [ s, S, ssharp, section ] };
+    key <AC03> { [ d, D, eth, ETH ] };
+    key <AC04> { [ f, F, f, F ] };
+    key <AC05> { [ g, G, g, G ] };
+    key <AC06> { [ h, H, h, H ] };
+    key <AC07> { [ j, J, j, J ] };
+    key <AC08> { [ k, K, oe, OE ] };
+    key <AC09> { [ l, L, oslash, Ooblique ] };
+    key <AC10> { [ semicolon, colon, paragraph, degree ] };
+    key <AC11> { [ dead_acute, dead_diaeresis, apostrophe, quotedbl ] };
+
+    // AB01 to AB10: Lower alphabetic keys and additional symbols
+    key <AB01> { [ z, Z, ae, AE ] };
+    key <AB02> { [ x, X, x, X ] };
+    key <AB03> { [ c, C, copyright, cent ] };
+    key <AB04> { [ v, V, v, V ] };
+    key <AB05> { [ b, B, b, B ] };
+    key <AB06> { [ n, N, ntilde, Ntilde ] };
+    key <AB07> { [ m, M, mu, mu ] };
+    key <AB08> { [ comma, less, ccedilla, Ccedilla ] };
+    key <AB09> { [ period, greater, dead_abovedot, dead_caron ] };
+    key <AB10> { [ slash, question, questiondown, dead_hook ] };
+
+    // Backslash key (BKSL)
+    key <BKSL> { [ backslash, bar, notsign, brokenbar ] };
+
+    // Left Shift + Backslash (LSGT) for alternate backslash/bar symbol
+    key <LSGT> { [ backslash, bar, backslash, bar ] };
+
+    // Adding level3 modifier switch
+    include "level3(ralt_switch)"
+};
