@@ -24,6 +24,6 @@ Edit `/etc/default/keyboard` and set the following
 ```
 ...
 XKBLAYOUT="us"
-XKBVARIANT="rpql"
+XKBVARIANT="qprog"
 ...
 ```
